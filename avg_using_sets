@@ -3,12 +3,9 @@ from __future__ import division
 def average(array):
     # your code goes here
     s = set(array)
-    sum_total=0
-    for i in s:
-        sum_total+=i
-    avg=sum_total/len(s)
-    return(avg)
+    return sum(s)/len(s)
         
+
 if __name__ == '__main__':
     n = int(raw_input())
     arr = map(int, raw_input().split())
