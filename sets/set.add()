@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+countries=set()
+n= int(input())
+for i in range(n):
+    i= input()
+    countries.add(i)
+print(len(countries))

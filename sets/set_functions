@@ -1,0 +1,15 @@
+n = int(input())
+s = set(map(int, input().split()))
+m= int(input())
+for i in range(m):
+    line = input()
+    cmd = line.split()[0]
+    if cmd!='pop':
+        key= int(line.split()[1])
+    if cmd=='pop':
+        s.pop()
+    elif cmd== 'remove':
+        s.remove(key)
+    elif cmd=='discard':
+        s.discard(key)
+print(sum(s))
